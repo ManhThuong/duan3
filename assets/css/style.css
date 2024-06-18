@@ -4,7 +4,70 @@
 html {
   font-size: 62.5%;
 }
+:root {
+  --header-color: #10375c;
+}
 body {
   font-family: "Sora", sans-serif;
   font-size: 1.6rem;
+}
+/* Dùng chung */
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  height: 800px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+/* end dùng chung */
+
+/*=========== Header============== */
+.header {
+  background: var(--header-color);
+  min-height: 100vh;
+}
+.header-top {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 2px;
+}
+.navbar__list {
+  display: flex;
+  justify-content: space-around;
+}
+.header__action--login,
+.navbar__link {
+  padding: 12px 24px;
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.navbar__link:hover,
+.navbar__link--active {
+  color: white;
+  text-shadow: 1px 0 0 currentColor;
+}
+.btn {
+  display: inline-block;
+  min-width: 205px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-radius: 30px;
+  background: #2e80ce;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.header__action--signup {
+  min-width: 104px;
+  line-height: 44px;
+  flex-shrink: 0;
 }
