@@ -135,6 +135,12 @@ a {
   line-height: 1.67;
 }
 /* ======service======== */
+.service__medialeft {
+  width: 49%;
+}
+.service__list {
+  /* width: 51%; */
+}
 .service {
   margin: 170px 0;
 }
@@ -207,6 +213,7 @@ a {
 .works {
   background: #f6fbff;
   height: 826px;
+  margin: 170px 0;
 }
 .works__list {
   display: flex;
@@ -223,6 +230,7 @@ a {
 .works__items:hover {
   transform: translateY(-16px);
   border: 16px solid #2e80ce;
+  transition: 0.5s;
 }
 .works_icon {
   width: 67.523px;
@@ -248,4 +256,168 @@ a {
   font-weight: 300;
   line-height: 1.75;
   margin-bottom: 18px;
+}
+/*======Takeback======= */
+.takeback__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 250px;
+}
+.takeback__media {
+  width: 49%;
+  margin-right: 130px;
+  position: relative;
+}
+.takeback__imglarge {
+  display: flex;
+  object-fit: cover;
+  width: 512px;
+  height: 370px;
+  border-radius: 6px;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+.takeback__imgsmall {
+  position: absolute;
+  top: 121px;
+  left: 238px;
+  object-fit: cover;
+  width: 332px;
+  height: 370px;
+  border-radius: 6px;
+}
+.takeback__btn {
+  margin-top: 38px;
+}
+.takeback__right {
+  width: 51%;
+}
+/* ===Dentist */
+.dentist {
+  height: 686px;
+}
+.dentist__bg {
+  width: 270px;
+  height: 318px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #eaf6ff;
+  overflow: hidden;
+}
+.dentist__avatar {
+  max-width: 100%;
+  height: 390px;
+  object-fit: cover;
+  object-position: center;
+}
+.dentist__top {
+  text-align: center;
+  margin: 0 auto;
+}
+.dentist__team {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+}
+.dentist__profile:hover .dentist__avatar {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.dentist__btn {
+  margin-bottom: 70px;
+}
+.dentist__title {
+  margin-top: 12px;
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.dentist__desc {
+  color: #575f66;
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.85;
+}
+.control__action {
+  margin-top: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.control__fw,
+.control__next {
+  background: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  border: 1px solid #575f66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.control__next:hover,
+.control__fw:hover {
+  background: #2e80ce;
+  color: #f6fbff;
+}
+/* ==Download== */
+.download {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.download__body {
+  margin: 180px 0 85px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  height: 427px;
+  border-radius: 4px;
+  background: #2e80ce;
+}
+.download__phone {
+  position: absolute;
+  bottom: 0;
+  width: 720px;
+  height: 522px;
+  object-fit: cover;
+  display: block;
+  left: -150px;
+}
+.download__right {
+  width: 586px;
+}
+.download__title,
+.download__desc {
+  color: white;
+}
+/* blog */
+.blog__action {
+  margin-top: 31px;
+  display: flex;
+
+  gap: 20px;
+}
+.blog__fw,
+.blog__next {
+  background: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  border: 1px solid #575f66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog__next:hover,
+.blog__fw:hover {
+  background: #2e80ce;
+  color: #f6fbff;
 }
