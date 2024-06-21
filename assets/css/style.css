@@ -462,11 +462,13 @@ a {
 .blog__detail {
   margin: 22px;
 }
+.blog__img {
+  height: 172px;
+  overflow: hidden;
+}
 .blog__thumb {
   max-width: 270px;
-  height: 172px;
   object-fit: cover;
-  overflow: hidden;
   border-radius: 12px 12px 0px 0px;
   background: url(<path-to-image>) lightgray -2px -4.032px / 100.741% 104.688%
     no-repeat;
@@ -483,4 +485,120 @@ a {
   font-weight: 300;
   line-height: 1.71;
   margin: 10px 0;
+}
+/* ====Appointment==== */
+.apm {
+  height: 452px;
+  background: #f6fbff;
+  text-align: center;
+  margin-bottom: 170px;
+}
+.apm__title {
+  padding-top: 100px;
+}
+.app__line {
+  height: 2px;
+  background: var(--primary-color);
+  width: 10%;
+  margin: 18px auto;
+}
+.app__desc {
+  max-width: 617px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+/* ===Footer=== */
+.footer {
+  background-color: var(--primary-color);
+  height: 533px;
+  padding-top: 100px;
+}
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  /* display: grid;
+  justify-content: space-between; */
+  column-gap: 78px;
+  /* grid-template-columns: 2fr 1fr 1fr 2fr; */
+}
+.footer__menu {
+  display: grid;
+  gap: 28px 78px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2;
+}
+.footer__logo {
+  display: block;
+  margin-bottom: 21px;
+}
+.footer__desc {
+  width: 336px;
+  color: #a9b3bb;
+  margin-bottom: 10px;
+}
+.footer__title {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 175% */
+  margin-bottom: 20px;
+}
+.footer__list a {
+  color: #a9b3bb;
+
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 185.714% */
+}
+.footer__social {
+  gap: 20px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.fa-brands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2e80ce;
+  font-size: 15px;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  background: #fff;
+}
+.fa-brands:hover {
+  color: white;
+  background: #2e80ce;
+}
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.subscribe__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 185.714% */
+  border-radius: 4px;
+  width: 108px;
+  height: 46px;
+}
+.subscribe__email {
+  width: 212px;
+  height: 46px;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  margin-right: 16px;
+  background-color: transparent;
 }
