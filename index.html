@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+
     <link
       rel="shortcut icon"
       href="./img/favicon_io/favicon.ico"
@@ -14,6 +15,7 @@
     />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reponsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,9 +34,11 @@
     <header class="header">
       <div class="container">
         <div class="header-top">
-          <img src="./img/logo.svg" alt="Logo" class="logo" />
+          <a href=""
+            ><img src="./img/logo.svg" alt="Logo" class="logo header__logo"
+          /></a>
           <nav class="navbar">
-            <div class="navbar__list">
+            <div class="navbar__list" id="navbar__list--pc">
               <ul class="navbar__item">
                 <li class="navbar__link">
                   <a href="./">Home</a>
@@ -90,6 +94,60 @@
         </section>
       </div>
     </header>
+    <!-- Tablet/Mobile header -->
+    <div class="mobile-header">
+      <!-- menu -->
+      <input
+        type="checkbox"
+        name="menu-checkbox"
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+      <label for="menu-checkbox">
+        <svg
+          class="mobile-header__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="currentColor"
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </label>
+      <!-- overlay -->
+      <label for="menu-checkbox" class="menu-overlay"></label>
+      <!-- Menu list mobile -->
+      <div class="mobile-header__menulist">
+        <div class="mobile-header__logo">
+          <img
+            src="./img/logo.svg"
+            alt="Logo"
+            class="mobile-header__menulist--logo"
+          />
+          <label for="menu-checkbox">
+            <svg
+              class="mobile-header__close"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+            >
+              <path
+                fill="currentColor"
+                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+              />
+            </svg>
+          </label>
+        </div>
+        <ul id="navbar__list--mobile">
+          <script>
+            const navPC = document.querySelector("#navbar__list--pc");
+            const navMobile = document.querySelector("#navbar__list--mobile");
+            navMobile.innerHTML = navPC.innerHTML;
+          </script>
+        </ul>
+      </div>
+    </div>
     <!-- main -->
     <main class="main">
       <!-- service -->
@@ -613,13 +671,14 @@
             <div class="subscribe">
               <input
                 class="subscribe__email"
-                type="Text"
+                type="email"
                 placeholder="Enter your email"
               />
               <div class="subscribe__btn btn">Subscribe</div>
             </div>
           </div>
         </section>
+        <p class="copyright">2021 GDN. Copyright and All rights reserved.</p>
       </div>
     </footer>
   </body>

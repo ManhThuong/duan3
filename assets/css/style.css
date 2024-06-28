@@ -12,6 +12,13 @@ body {
   font-family: "Sora", sans-serif;
 }
 /* ===Dùng chung=== */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
 a {
   text-decoration: none;
 }
@@ -50,7 +57,7 @@ a {
   display: flex;
 }
 .navbar__item:hover {
-  /* opacity: 0.5; */
+  opacity: 0.5;
   text-shadow: 1px 0 0 #fff;
 }
 .navbar__link a {
@@ -75,6 +82,7 @@ a {
 .btn:hover {
   opacity: 0.8;
 }
+
 .header__action--login,
 .header__action--singup {
   color: #fff;
@@ -514,18 +522,20 @@ a {
   padding-top: 100px;
 }
 .footer__body {
-  display: flex;
-  justify-content: space-between;
-  /* display: grid;
+  /* display: flex;
   justify-content: space-between; */
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 0.4fr 0.4fr;
   column-gap: 78px;
-  /* grid-template-columns: 2fr 1fr 1fr 2fr; */
+  border-bottom: 2px solid #406181;
 }
 .footer__menu {
   display: grid;
   gap: 28px 78px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 2;
+  margin-bottom: 28px;
 }
 .footer__logo {
   display: block;
@@ -545,9 +555,11 @@ a {
   line-height: 28px; /* 175% */
   margin-bottom: 20px;
 }
+.footer__list {
+  width: 134px;
+}
 .footer__list a {
   color: #a9b3bb;
-
   font-family: "Open Sans";
   font-size: 1.4rem;
   font-style: normal;
@@ -601,4 +613,24 @@ a {
   border: 1px solid #406181;
   margin-right: 16px;
   background-color: transparent;
+  outline: none;
+  color: white;
+}
+.subscribe__email::placeholder {
+  color: #9ca8b1;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.85;
+}
+.copyright {
+  color: #aab3ba;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 185.714% */
+  margin-top: 28px;
 }
