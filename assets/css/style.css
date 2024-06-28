@@ -140,8 +140,11 @@ a {
   border-radius: 0px 6px 6px 0px;
   background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
+.hero__booking {
+  margin-right: 38px;
+}
 .hero__phone {
-  margin-left: 38px;
+  /* margin-left: 38px; */
   color: #fff;
   text-align: center;
   font-size: 1.6rem;
@@ -436,7 +439,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 170px;
+  margin-bottom: 100px;
 }
 .blog__left {
   width: 40%;
@@ -501,10 +504,12 @@ a {
   height: 452px;
   background: #f6fbff;
   text-align: center;
-  margin-bottom: 170px;
+  justify-content: center;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 .apm__title {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .app__line {
   height: 2px;
@@ -517,15 +522,13 @@ a {
   margin: 0 auto;
   margin-bottom: 38px;
 }
+
 /* ===Footer=== */
 .footer {
   background-color: var(--primary-color);
-  height: 533px;
-  padding-top: 100px;
+  padding: 50px;
 }
 .footer__body {
-  /* display: flex;
-  justify-content: space-between; */
   display: grid;
   justify-content: space-between;
   grid-template-columns: 1fr 0.4fr 0.4fr;

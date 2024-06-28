@@ -138,6 +138,25 @@
   .blog__action {
     justify-content: center;
   }
+  .apm {
+    padding-bottom: 50px;
+  }
+  /* footer */
+  .footer__slogan {
+    display: none;
+  }
+  .footer__body {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
+  .subscribe {
+    flex-direction: column;
+    align-items: start;
+  }
+  .subscribe__btn {
+    margin-top: 10px;
+  }
 }
 
 /* Tablet */
@@ -145,9 +164,24 @@
 }
 /* Mobile */
 @media (max-width: 768.98px) {
+  .mobile-header__menulist {
+    padding: 29px;
+    inset: 0 25% 0 0;
+  }
+  .hero__small {
+    display: none;
+  }
+  .hero__title {
+    font-size: 4rem;
+  }
+  .hero__phone {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 /* ===Ẩn phần ko liên quan */
-.footer {
+main,
+footer {
   display: none;
 }
