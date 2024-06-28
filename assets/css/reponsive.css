@@ -12,7 +12,7 @@
   .header__action {
     display: none;
   }
-  .navbar__link {
+  .navbar__link a {
     display: block;
     font-size: 2rem;
   }
