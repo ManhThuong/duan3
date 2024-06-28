@@ -70,6 +70,33 @@
     height: 30px;
     color: white;
   }
+  /* phần hero */
+  .hero__row {
+    text-align: center;
+  }
+  .hero {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .hero__left {
+    order: 2;
+    width: 80%;
+  }
+  .hero__media {
+    order: 1;
+  }
+  /* services */
+  .service__content {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .service__list {
+    width: 90%;
+    text-align: center;
+  }
+  .service__item {
+    text-align: start;
+  }
 }
 
 /* Tablet */
@@ -80,8 +107,12 @@
 }
 
 /* ===Ẩn phần ko liên quan */
-.hero,
-main,
-footer {
+.works,
+.takeback,
+.dentist,
+.download,
+.footer,
+.blog,
+.appointment {
   display: none;
 }

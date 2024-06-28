@@ -45,7 +45,8 @@ a {
 /* end dùng chung */
 .header {
   background-color: var(--primary-color);
-  height: 800px;
+  padding-bottom: 100px;
+  /* height: 800px; */
 }
 .header-top {
   padding-top: 30px;
@@ -91,43 +92,48 @@ a {
   border-radius: 22px;
   margin-left: 28px;
 }
+/* =====Khối hero===== */
 .hero {
-  margin-top: 76px;
+  padding-top: 76px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.hero__left {
+  width: 44%;
+}
+.hero__right {
+  /* flex: 1; */
+}
 .hero__title {
-  width: 517px;
   color: #fff;
   font-size: 7rem;
   font-weight: 600;
-  line-height: 80px; /* 114.286% */
+  line-height: 1.14;
   letter-spacing: -1.4px;
 }
 .hero__desc {
   margin-top: 22px;
   margin-bottom: 38px;
-  width: 468px;
   color: #c9d2da;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 30px; /* 166.667% */
 }
-.hero__media {
+.hero__right {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
-.hero__media1 {
+.hero__large {
   width: 330px;
   height: 540px;
   object-fit: cover;
   border-radius: 6px;
-  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
-  position: relative;
-  right: -1px;
+  margin-right: -6px;
+  z-index: 1;
 }
-.hero__media2 {
+.hero__small {
   width: 210px;
   height: 410px;
   object-fit: cover;
@@ -143,14 +149,12 @@ a {
   line-height: 1.67;
 }
 /* ======service======== */
-.service__medialeft {
-  width: 49%;
+.service {
+  padding: 70px 0;
+  background-color: white;
 }
 .service__list {
-  /* width: 51%; */
-}
-.service {
-  margin: 170px 0;
+  width: 470px;
 }
 .service__content {
   display: flex;
@@ -163,7 +167,6 @@ a {
   height: 570px;
   object-fit: cover;
   border-radius: 12px;
-  background: url(<path-to-image>) lightgray 0px -1.3px / 100% 149.93% no-repeat;
 }
 .service__title,
 .service__desc {
@@ -172,7 +175,6 @@ a {
 .service__item {
   display: flex;
   justify-content: center;
-  width: 470px;
   height: 128px;
 }
 .service__item:hover {
