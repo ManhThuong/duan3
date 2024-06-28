@@ -222,12 +222,13 @@ a {
 /* ======WORKS======== */
 .works {
   background: #f6fbff;
-  height: 826px;
-  margin: 170px 0;
+  /* height: 826px; */
+  padding: 70px 0;
 }
 .works__list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .works__items {
   width: 370px;
@@ -272,7 +273,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 250px;
+  padding: 70px 0;
 }
 .takeback__media {
   width: 49%;
@@ -299,12 +300,22 @@ a {
 .takeback__btn {
   margin-top: 38px;
 }
-.takeback__right {
-  width: 51%;
-}
 /* ===Dentist */
 .dentist {
-  height: 686px;
+  /* height: 686px; */
+  padding: 140px 0;
+}
+.dentist__profile,
+.dentist__top {
+  text-align: center;
+  margin: 0 auto;
+}
+.dentist__team {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
 }
 .dentist__bg {
   width: 270px;
@@ -320,15 +331,7 @@ a {
   object-fit: cover;
   object-position: center;
 }
-.dentist__top {
-  text-align: center;
-  margin: 0 auto;
-}
-.dentist__team {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 30px;
-}
+
 .dentist__profile:hover .dentist__avatar {
   transform: scale(1.1);
   transition: 0.5s;
@@ -378,7 +381,6 @@ a {
 }
 /* ==Download== */
 .download {
-  margin-top: 150px;
   margin-bottom: 150px;
 }
 .download__body {
@@ -387,8 +389,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 70px;
-  height: 427px;
+  padding: 70px;
   border-radius: 4px;
   background: #2e80ce;
 }
@@ -412,7 +413,6 @@ a {
 .blog__action {
   margin-top: 31px;
   display: flex;
-
   gap: 20px;
 }
 .blog__fw,

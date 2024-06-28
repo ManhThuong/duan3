@@ -97,6 +97,47 @@
   .service__item {
     text-align: start;
   }
+  /* work */
+  .works__list {
+    flex-direction: column;
+  }
+  .works__items {
+    width: 90%;
+  }
+  /* take back */
+  .takeback__content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .takeback__imgsmall {
+    display: none;
+  }
+  /* Dentist */
+  .dentist__team {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  /* download */
+  .download__phone--top {
+    display: none;
+  }
+  .download__body {
+    /* text-align: center; */
+    margin: 0 auto;
+  }
+  /* blog */
+  .blog__body {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .blog__left {
+    order: 2;
+    width: 80%;
+    text-align: center;
+  }
+  .blog__action {
+    justify-content: center;
+  }
 }
 
 /* Tablet */
@@ -107,12 +148,6 @@
 }
 
 /* ===Ẩn phần ko liên quan */
-.works,
-.takeback,
-.dentist,
-.download,
-.footer,
-.blog,
-.appointment {
+.footer {
   display: none;
 }
