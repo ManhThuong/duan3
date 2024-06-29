@@ -168,6 +168,9 @@
     padding: 29px;
     inset: 0 25% 0 0;
   }
+  .mobile__menu--gachchan {
+    border-bottom: 3px solid rgb(102, 100, 100);
+  }
   .hero__small {
     display: none;
   }
@@ -178,10 +181,44 @@
     display: block;
     margin: 0 auto;
   }
+  .service__img {
+    width: 100%;
+    height: auto;
+  }
+  .works__items {
+    width: 95%;
+    height: auto;
+  }
+  .works__content {
+    padding: 20px;
+    margin-top: -10px;
+  }
+  .takeback__media {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .takeback__imglarge {
+    width: 100%;
+    height: 100%;
+  }
+  .dentist__team {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+  .blog__right {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+  .blog__content {
+    width: 90%;
+  }
+  .blog__thumb {
+    max-width: 100%;
+  }
+  .footer__body {
+    justify-content: space-between;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ===Ẩn phần ko liên quan */
-main,
-footer {
-  display: none;
-}

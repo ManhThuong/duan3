@@ -501,7 +501,6 @@ a {
 }
 /* ====Appointment==== */
 .apm {
-  height: 452px;
   background: #f6fbff;
   text-align: center;
   justify-content: center;
@@ -537,7 +536,7 @@ a {
 }
 .footer__menu {
   display: grid;
-  gap: 28px 78px;
+  gap: 28px 28px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 2;
   margin-bottom: 28px;
