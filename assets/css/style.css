@@ -442,7 +442,7 @@ a {
   margin-bottom: 100px;
 }
 .blog__left {
-  width: 40%;
+  width: 100%;
 }
 .blog__readmore {
   display: inline-block;
@@ -461,7 +461,7 @@ a {
   column-gap: 30px;
 }
 .blog__content {
-  width: 270px;
+  width: 100%;
   flex-shrink: 0;
   border-radius: 12px;
   background: #fff;
@@ -476,11 +476,12 @@ a {
   margin: 22px;
 }
 .blog__img {
+  width: 100%;
   height: 172px;
   overflow: hidden;
 }
 .blog__thumb {
-  max-width: 270px;
+  /* max-width: 400px; */
   object-fit: cover;
   border-radius: 12px 12px 0px 0px;
   background: url(<path-to-image>) lightgray -2px -4.032px / 100.741% 104.688%
