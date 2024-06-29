@@ -525,7 +525,7 @@ a {
 /* ===Footer=== */
 .footer {
   background-color: var(--primary-color);
-  padding: 50px;
+  padding: 50px 0;
 }
 .footer__body {
   display: grid;
@@ -546,7 +546,6 @@ a {
   margin-bottom: 21px;
 }
 .footer__desc {
-  width: 336px;
   color: #a9b3bb;
   margin-bottom: 10px;
 }
@@ -611,7 +610,7 @@ a {
   height: 46px;
 }
 .subscribe__email {
-  width: 212px;
+  /* width: 212px; */
   height: 46px;
   border-radius: 4px;
   border: 1px solid #406181;
